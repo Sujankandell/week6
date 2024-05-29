@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Theses</title>
+</head>
+<body>
+    <h2>Available Theses</h2>
+    <ul>
+        {% for thesis in theses %}
+        <li>{{ thesis.title }} - {{ thesis.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

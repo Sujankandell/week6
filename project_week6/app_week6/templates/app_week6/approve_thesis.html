@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approve Thesis</title>
+</head>
+<body>
+    <h2>Approve Thesis</h2>
+    <ul>
+        {% for thesis in theses %}
+        <li>{{ thesis.title }} <a href="{% url 'approve' thesis.id %}">Approve</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
